@@ -1,0 +1,139 @@
+.simile_blok {
+  &-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    h2{
+      font-family: $regular;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 125%;
+      text-transform: capitalize;
+      color: #000000;
+    }
+    button{
+      border: none;
+      background: transparent;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      font-family: $semibold;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 14px;
+      text-align: right;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #96A5A6;
+      transition: 0.3s;
+      &:hover{
+        color: $dark-blue;
+      }
+      svg{
+        margin-left: 15px;
+        transition: 0.3s;
+        &:hover{
+          path{
+            fill: $dark-blue;
+          }
+        }
+      }
+    }
+  }
+  &-a{
+    margin-bottom: 43px;
+    display: flex;
+    justify-content: flex-end;
+    a{
+      font-family: $bold;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 15px;
+      text-align: right;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #000000;
+      transition: 0.3s;
+      &:hover{
+        color: rgba(46, 63, 127, 1);
+      }
+      &:first-child{
+        margin-right: 27px;
+        color: rgba(46, 63, 127, 1);
+      }
+    }
+  }
+  .popular-blok{
+    justify-content: flex-end;
+    margin-bottom: 42px;
+    &__item{
+      &:nth-child(2){
+        margin-left: 30px;
+        margin-right: 30px;
+      }
+    }
+  }
+  .cart_info-text{
+    border-bottom: none;
+    .cart_info-text__left{
+      min-width: unset;
+      display: flex;
+      justify-content: space-between;
+      margin-right: 0;
+      width: 100%;
+      ul{
+        width: 100%;
+        li{
+          p{
+            width: 270px;
+          }
+          span{
+            max-width: 195px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 915px){
+  .simile_blok{
+    &-title{
+      h2{
+        font-size: 25px;
+      }
+      button{
+        font-size: 10px;
+        img{
+          margin-left: 10px;
+        }
+      }
+    }
+    &-a{
+      justify-content: center;
+      a{
+        text-align: center;
+        &:first-child{
+          margin-right: 15px;
+        }
+      }
+    }
+    .popular-blok{
+      flex-wrap: nowrap;
+      overflow: scroll;
+      width: 100%;
+      justify-content: flex-start;
+    }
+    .cart_info-text{
+      overflow: scroll;
+      .cart_info-text__left{
+        width: 900px;
+      }
+    }
+  }
+}

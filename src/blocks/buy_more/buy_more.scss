@@ -1,0 +1,137 @@
+.buy_more {
+  margin-bottom: 131px;
+  .buy_more-slider{
+    .popular-blok__item-btn{
+      img{
+        width: 26px!important;
+        height: 26px;
+      }
+    }
+  }
+  h3{
+    font-family: $semibold;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 125%;
+    color: #000000;
+    margin-bottom: 28px;
+  }
+  .tabs-slider{
+    ul{
+      display: flex;
+      margin-bottom: 41px;
+      li{
+        background: #FFFFFF;
+        border: 1px solid #E0E0E0;
+        box-sizing: border-box;
+        padding: 15px 20px;
+        a{
+          font-family: $montserrat;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 135%;
+          color: #000000;
+          opacity: 0.5;
+        }
+        &:not(:last-child){
+          margin-right: 10px;
+        }
+      }
+      .tab-active-slider{
+        background: #EAF3FF;
+        border: none;
+        a{
+          opacity: 1;
+          color: #000000;
+        }
+      }
+    }
+    .tabs-stage-slider{
+      .owl-item{
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 8px;
+      }
+      .owl-carousel{
+        left: -8px;
+      }
+      .owl-carousel .owl-item img{
+        width: unset;
+      }
+      .owl-nav{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 110%;
+        display: flex;
+        justify-content: space-between;
+        svg{
+          width: 42px;
+          height: 42px;
+          transition: 0.3s;
+          &:hover{
+            path{
+              &:first-child{
+                fill: black;
+              }
+            }
+          }
+        }
+      }
+      
+    }
+  }
+}
+
+@media (max-width: 1280px){
+  
+  
+  
+  .buy_more{
+    .tabs-slider{
+      ul{
+        li{
+          padding: 10px;
+          a{
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    .tabs-stage-slider{
+      .owl-nav{
+        width: 100%!important;
+       
+      }
+      .popular-blok__item{
+        max-width: 100%;
+        img{
+          width: 100%;
+          height: auto;
+          max-width: 285px;
+          object-fit: cover;
+        }
+        .popular-blok__item-btn, .popular-blok__item-check{
+          img{
+            width: 18px!important;
+            height: 18px;
+            object-fit: contain;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 465px){
+  .buy_more{
+    margin-bottom: 40px;
+  .owl-item{
+    padding-left: 30px!important;
+    padding-right: 30px!important;
+  }
+}
+}

@@ -1,0 +1,53 @@
+.sale {
+  margin-top: 37px;
+  margin-bottom: 28px;
+  padding: 19px 0;
+  background: rgba(183, 212, 255, 0.46);
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  p{
+    font-family: $montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $dark-blue;
+    margin-right: 15px;
+  }
+  span{
+    font-family: $montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 125%;
+    text-align: center;
+    color: #000000;
+  }
+  svg{
+    position: absolute;
+    right: 13px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover{
+      path{
+        fill: $dark-blue;
+        fill-opacity: 1;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 765px){
+  .sale{
+    display: none;
+  }
+}

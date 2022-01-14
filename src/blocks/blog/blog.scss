@@ -1,0 +1,134 @@
+.blog {
+  margin-bottom: 91px;
+  padding: 71px  96px 63px;
+  background: rgba(183, 212, 255, 0.29);
+  border-radius: 10px;
+  h2{
+    font-family: $semibold;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 54px;
+    color: #000000;
+    margin-bottom: 40px;
+  }
+  &-content{
+    &__item{
+      img{
+        border-radius: 10px;
+        margin-bottom: 32px;
+      }
+      a{
+        font-family: $montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 125%;
+        color: #000000;
+      }
+      .owl-nav{
+        position: absolute;
+        width: 116%;
+        display: flex;
+        justify-content: space-between;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        left: 50%;
+        svg{
+          width: 42px;
+          height: 42px;
+          transition: 0.3s;
+          &:hover{
+            path{
+              &:first-child{
+                fill: black;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .blog-link{
+    padding: 17px 42px;
+    font-family: $regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #2E3F7F;
+    border-radius: 5px;
+    margin-top: 48px;
+    max-width: 248px;
+    margin-left: auto;
+    display: block;
+    border: 1px solid transparent; 
+    transition: 0.3s;
+    &:hover{
+      color: $dark-blue;
+      background-color: white;
+      border: 1px solid $dark-blue;
+    }
+  }
+}
+
+
+@media (max-width: 815px){
+  .blog{
+    margin-bottom: 69px;
+    padding: 31px 40px 38px;
+    background: #B7D4FF;
+    h2{
+      text-align: center;
+      margin-bottom: 32px;
+      font-size: 30px;
+      line-height: 36px;
+    }
+    &-content{
+      &__item{
+        img{
+          width: 262px!important;
+          height: 150px;
+          margin: 0 auto;
+          margin-bottom: 23px;
+        }
+        a{
+          font-size: 15px;
+          line-height: 125%;
+          max-width: 253px;
+          margin: 0 auto;
+          display: block;
+        }
+        .owl-nav{
+          
+          svg{
+            width: 26px!important;
+            height: 26px;
+          }
+        }
+      }
+    }
+    .blog-link{
+      font-size: 18px;
+      line-height: 21px;
+      padding: 15px 14px;
+      margin: 48px auto 0;
+      max-width: 179px;
+    }
+  }
+}
+
+
+@media (max-width: 415px){
+  .blog{
+    &-content{
+      &__item{
+        .owl-nav{
+          width: 120%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+.text_blok {
+  
+  h2{
+    font-family: $semibold;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 125%;
+    text-transform: capitalize;
+    color: #000000;
+    margin-bottom: 48px;
+  }
+  .second{
+    .text_blok-content-item{
+      max-width: 100%;
+    }
+  }
+  .third{
+    .text_blok-content-item{
+      max-width: 368px;
+    }
+  }
+  .text_blok-content{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 83px;
+    flex-wrap: wrap;
+    &-item{
+      max-width: 568px;
+      h3{
+        margin-bottom: 29px;
+        font-family: $semibold;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 125%;
+        text-transform: capitalize;
+        color: #000000;
+      }
+      p{
+        font-family: $regular;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 165%;
+        color: #000000;
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+}

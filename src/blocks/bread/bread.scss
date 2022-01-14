@@ -1,0 +1,32 @@
+.bread {
+  display: flex;
+  align-items: center;
+  margin: 20px auto 41px;
+  flex-wrap: wrap;
+  a{
+    font-family: $regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 125%;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.6);
+    transition: 0.3s;
+    &:hover{
+      color: $dark-blue;
+    }
+ 
+  }
+}
+
+
+@media (max-width: 768px){
+  .bread{
+    margin-bottom: 26px;
+    a{
+      font-size: 10px;
+      line-height: 125%;
+    }
+  }
+}
